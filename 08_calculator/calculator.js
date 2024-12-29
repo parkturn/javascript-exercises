@@ -26,9 +26,14 @@ const power = function(num1, num2) {
   return poweredProduct;
 };
 
-const factorial = function() {
-	
-};
+const factorial = function(num) {
+  if (num === 0 || num === 1)
+    return 1;
+  for (i = num -1; i >= 1; i--) {
+    num *=  i;
+  }
+  return num;
+  };
 
 // Do not edit below this line
 module.exports = {
